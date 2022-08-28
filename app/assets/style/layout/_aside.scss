@@ -1,0 +1,46 @@
+.aside {
+    width: 296px;
+    height: 100vh;
+    background-color: $gray-100;
+    font-weight: bold;
+
+    li:not(:first-child):hover{
+        background-color: $gray-300;
+        @extend .bg-gradient;
+    }
+
+    .active {
+        position: relative;
+    
+        &:before {
+            content: '';
+            position: absolute;
+            left: -1rem;
+            top: 0.25rem;
+            height: 2rem;
+            width: 0.25rem;
+            background-color: $success;
+        }
+    
+        * {
+            color: $success;
+        }
+    }
+}
+
+.currentUser{
+    img{
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+
+    ul{
+        list-style-type: none;
+        padding: 0;
+
+        .userEmail{
+            font-size: 0.875rem;
+            color: $gray-600;
+        }
+    }
+}

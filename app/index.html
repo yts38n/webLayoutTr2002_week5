@@ -1,0 +1,167 @@
+---
+title: 後台表單設計
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+heading: Assignment
+---
+
+<section class="px-3">
+	<!--Content nav start-->
+	<section class="d-flex align-items-center mb-2">
+		<div class="dropdown me-auto">
+			<a class="fw-bold link-dark d-flex align-items-center" data-bs-toggle="dropdown" href="#" role="button"
+				aria-expanded="false">
+				All (4)
+				<span class="material-icons text-success ms-2">
+					expand_more
+				</span>
+			</a>
+			<ul class="dropdown-menu">
+				<li><a class="dropdown-item" href="#">Chapter Assignment 2</a></li>
+				<li><a class="dropdown-item" href="#">Chapter Assignment 1</a></li>
+				<li><a class="dropdown-item" href="#">Final Assignment</a></li>
+			</ul>
+			</li>
+		</div>
+		<p class="fs-7 text-muted mb-0">2 comments</p>
+	</section>
+	<!--Content nav end-->
+
+	<!--Content start-->
+	<section class="d-flex assigment">
+		<ul class="list-group assigment-list me-3">
+			<li class="list-group-item d-flex fs-7 active" data-bs-toggle="collapse" href="#collapseExample"
+				role="button" aria-expanded="true" aria-controls="collapseExample">
+				<div class="me-auto">
+					<p>Chapter Assignment 2</p>
+					<p class="fw-bold fs-6">Please check this file…</p>
+				</div>
+				<div class="text-end d-flex flex-column justify-content-between">
+					<p>4 hrs ago</p>
+					<p class="text-secondary">Emily Wang</p>
+				</div>
+			</li>
+			<li class="list-group-item d-flex fs-7">
+				<div class="me-auto">
+					<p>Chapter Assignment 1</p>
+					<p class="fw-bold fs-6">My Homework</p>
+				</div>
+				<div class="text-end d-flex flex-column justify-content-between">
+					<p>12 hrs ago</p>
+					<p class="text-secondary">David Xu</p>
+				</div>
+			</li>
+			<li class="list-group-item d-flex fs-7">
+				<div class="me-auto">
+					<p>Final Assignment</p>
+					<p class="fw-bold fs-6">Have a problem with this…</p>
+				</div>
+				<div class="text-end d-flex flex-column justify-content-between">
+					<p>18 hrs ago</p>
+					<p class="text-secondary">Tony Wei</p>
+				</div>
+			</li>
+			<li class="list-group-item d-flex fs-7">
+				<div class="me-auto">
+					<p>Final Assignment</p>
+					<p class="fw-bold fs-6">Did I do it right?</p>
+				</div>
+				<div class="text-end d-flex flex-column justify-content-between">
+					<p>19 hrs ago</p>
+					<p class="text-secondary">Christina Lin</p>
+				</div>
+			</li>
+		</ul>
+		<div class="w-100 collapse show" id="collapseExample">
+			<div class="card mb-3">
+				<div class="card-header d-flex align-items-center active">
+					<div class="me-auto">
+						<p class="fs-7">Chapter Assignment 2 / HTML&CSS</p>
+						<p class="fw-bold fs-6">Please check this file for me, thanks!</p>
+					</div>
+					<span class="material-icons">more_vert</span>
+				</div>
+				<div class="card-body p-3">
+					<ul class="p-0 m-0">
+						<li class="d-flex pe-3 mb-3">
+							<img src="./assets/images/emilywang.jpeg" alt="emilywang"
+								class="rounded-circle me-2 flex-shrink-0">
+							<div class="border-bottom">
+								<p class="fw-bold mb-1">Emily Wang</p>
+								<p class="fs-7 text-muted mb-3">10:38 AM (4 hours ago)</p>
+								<p class="conversation mb-3">Hi Teacher, the attached file is my homework of chapter 2.
+									And
+									here
+									comes a question: Why in the following code the height of the
+									<code class="text-success">div</code> is bigger than the height of the
+									<code class="text-success">img</code> ? There is a gap below the image, but it
+									doesn’t
+									seems to be a padding/margin.
+									<br>
+									What is the gap or extra space below image?
+								</p>
+								<a href="#" class="btn btn-light border mb-3" download="HW-2-David.zip">
+									<span class="material-icons align-top">attach_file</span>
+									HW-2-David.zip
+								</a>
+							</div>
+						</li>
+						<li class="d-flex pe-3">
+							<img src="./assets/images/andychen.jpeg" alt="andychen"
+								class="rounded-circle me-2 flex-shrink-0">
+							<div>
+								<div class="d-flex">
+									<div class="me-auto">
+										<p class="fw-bold mb-1">Andy Chen (You)</p>
+										<p class="fs-7 text-muted mb-3">13:24 AM (1 hours ago)</p>
+									</div>
+									<div>
+										<a href="#" class="link-dark">
+											<span class="material-icons me-2">star_border</span>
+										</a>
+										<a href="#" class="link-dark">
+											<span class="material-icons ms-3">edit</span>
+										</a>									
+									</div>
+								</div>
+								<p class="conversation mb-3">Hi David, by default, an image is rendered inline, like a
+									letter so it sits on the same line that a, b, c and d sit on. There is space below
+									that
+									line for the descenders you find on letters like g, j, p and q.
+									<br>
+									<br>
+									You can:
+									<br>
+									<br>
+									　• adjust the
+									<code class="text-success">vertical-align</code> of the image to position it
+									elsewhere
+									(e.g. the <code class="text-success">middle</code> ) or
+									<br>
+									　• change the <code class="text-success">display</code> so it isn’t inline.
+								</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="d-flex align-items-center p-0">
+				<div class="me-auto d-flex align-items-center">
+					<a href="#" role="navigation" class="link-dark">
+						<span class="material-icons me-2">navigate_before</span>
+					</a>
+					<a href="#" role="navigation" class="link-dark">
+						<span class="material-icons ms-3">navigate_next</span>
+					</a>
+				</div>
+				<div>
+					<button class="btn me-3 border-success me-3">Mark as read</button>
+					<button class="btn btn-success data-bs-toggle="collapse" href="#collapseReply"
+					role="button" aria-expanded="true" aria-controls="collapseReply"">Reply</button>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--Content end-->
+</section>

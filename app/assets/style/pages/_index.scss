@@ -1,0 +1,64 @@
+.link-dark {
+	text-decoration: none;
+}
+
+.assigment {
+	p {
+		margin-bottom: 0;
+	}
+
+	&-list {
+		li {
+			width: 320px;
+			padding: 0.75rem;
+			font-size: $font-size-base * 0.75;
+			border: 1px solid $gray-400;
+			border-radius: 2px 2px 0px 0px;
+
+			&:not(:first-child):hover {
+				background-color: $gray-300;
+				@extend .bg-gradient;
+			}
+		}
+	}
+
+	.active {
+		color: $gray-900;
+		background-color: $gray-100;
+		border-color: $gray-400;
+	}
+
+	.card {
+		border: 1px solid $gray-400;
+		border-radius: 2px;
+	}
+
+	.card-header {
+		border-radius: 2px 2px 0px 0px;
+		padding: 0.75rem 1rem;
+	}
+
+	.card-body {
+		ul {
+			list-style-type: none;
+		}
+
+		img {
+			height: 2.5rem;
+			width: 2.5rem;
+		}
+
+		code {
+			font-family: 'Roboto Mono', monospace;
+			font-size: 0.875rem;
+		}
+
+		a {
+			border-radius: 0.125rem;
+		}
+
+		.conversation {
+			font-size: 0.875rem;
+		}
+	}
+}
