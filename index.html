@@ -1,11 +1,106 @@
----
-title: 後台表單設計
-layout: ./app/layout.ejs
-engine: ejs
-current: index
-heading: Assignment
----
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>後台表單設計</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+	<link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+	<main class="d-flex">
+		<!--Left menu start-->
+		<aside class="aside p-3 d-flex flex-column no-wrap">
+    <ul class="nav flex-column py-3 mb-auto">
+        <li class="nav-item mb-2">
+            <a class="nav-link link-dark py-0 mb-3" href="#">
+                <img src="./assets/images/logo-ANSWER.svg" alt="logo-ANSWER">
+            </a>
+        </li>
+        <li class="nav-item mb-2">
+            <a class="nav-link link-dark" href="#">
+                <span class="material-icons me-3 align-bottom">assessment</span>
+                Dashboard
+            </a>
+        </li>
+        <li class="nav-item mb-2">
+            <a class="nav-link link-dark" href="#">
+                <span class="material-icons me-3 align-bottom">question_answer</span>
+                Question
+            </a>
+        </li>
+        <li class="nav-item mb-2 active">
+            <a class="nav-link link-dark" href="#">
+                <span class="material-icons me-3 align-bottom">assignment</span>
+                Assignment
+            </a>
+        </li>
+        <li class="nav-item mb-2">
+            <a class="nav-link link-dark" href="#">
+                <span class="material-icons me-3 align-bottom">video_library</span>
+                Course
+            </a>
+        </li>
+        <li class="nav-item mb-2">
+            <a class="nav-link link-dark" href="#">
+                <span class="material-icons me-3 align-bottom">people</span>
+                Admin
+            </a>
+        </li>
+        <li class="nav-item mb-2">
+            <a class="nav-link link-dark" href="#">
+                <span class="material-icons me-3 align-bottom">settings</span>
+                Settings
+            </a>
+        </li>
+    </ul>
+    <div class="d-flex currentUser px-3">
+        <img src="./assets/images/andychen.jpeg" alt="andychen" class="rounded-circle me-3">
+        <ul>
+            <li>Andy Chen</li>
+            <li class="fw-normal userEmail">andy0401@mail.com</li>
+        </ul>
+    </div>
+</aside>
+		<!--Left menu end-->
+
+		<!--Right content start-->
+		<section class="w-100 p-3">
+			<!--Header start-->
+			<nav class="navbar header p-3 mb-3 d-flex align-items-center">
+    <div class="d-flex align-items-baseline">
+        <h1 class="fs-4 fw-bold mb-0">Assignment</h1>
+
+        
+                <div class="dropdown">
+                    <a class="fw-bold link-dark d-flex align-items-center" data-bs-toggle="dropdown" href="#" role="button"
+                        aria-expanded="false">
+                        All Courses
+                        <span class="material-icons text-success ms-2">
+                            expand_more
+                        </span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Front-End</a></li>
+                        <li><a class="dropdown-item" href="#">Gulp</a></li>
+                        <li><a class="dropdown-item" href="#">Git & Github</a></li>
+                    </ul>
+                    </li>
+                </div>
+                
+    </div>
+    <div class="d-flex align-items-center">
+        <span class="material-icons me-4">search</span>
+        <span class="material-icons">notifications_active</span>
+    </div>
+
+</nav>
+			<!--Header end-->
+
+			
 <section class="px-3">
 	<!--Content nav start-->
 	<section class="d-flex align-items-center mb-2">
@@ -165,3 +260,11 @@ heading: Assignment
 	</section>
 	<!--Content end-->
 </section>
+		</section>
+		<!--Right content end-->
+	</main>
+	<script src="./assets/js/vendors.js"></script>
+	<script src="./assets/js/all.js"></script>
+</body>
+
+</html>
